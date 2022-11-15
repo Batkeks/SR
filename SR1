@@ -1,0 +1,42 @@
+x = float(input())
+y = float(input())
+dlina = 3
+visota = 1.8
+
+#первое условие
+if  x > -0.5 and x < 3.5 and y > 1 and y < 2.8:
+        print("Принадлежит")
+        print("S =", dlina * visota)
+        print("P =", dlina + visota)
+
+#второе условие
+if x == -0.5:
+    print("Точка на границе")
+    print("x =", x + 2)
+    if x == 3.5:
+        print("Точка на границе")
+        print("x =",x - 2)
+
+if y == 1:
+    print("Точка на границе")
+    print("y =",y + 2)
+    if y == 2.8:
+        print("Точка на границе")
+        print("y =",y - 2)
+
+#третье условие
+if x < -0.5 or x > 3.5 and y < 1 or y > 2.8:
+    print("Не принадлежит")
+    print("Введите две строки:")
+    stroka1 = (input())
+    stroka2 = (input())
+    if len(stroka1) > len(stroka2):
+        if len(stroka1) > 5.4:
+            print("S <", len(stroka1))
+        else:
+            print("S >", len(stroka1))
+    if len(stroka2) > len(stroka1):
+        if len(stroka2) > 5.4:
+            print("S <", len(stroka2))
+        else:
+            print("S >", len(stroka2))
